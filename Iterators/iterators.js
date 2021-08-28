@@ -33,3 +33,39 @@ const smallNumbers = bigNumbers.map(number => {
 The .filter() Method
 ...
 */
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+const smallNumbers = randomNumbers.filter(numbers => {
+  if(numbers < 250)
+    return numbers;
+});
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+const longFavoriteWords = favoriteWords.filter(words => {
+  if(words.length > 7)
+    return words;
+});
+
+/*
+The FindIndex() Method
+...
+*/
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(word => {
+  return word === 'elephant';
+});
+
+const startsWithS = animals.findIndex(word => {
+  return word[0] === 's';
+
+/*
+The .reduce() Method
+..
+*/
+const newNumbers = [1, 3, 5, 7];
+
+const newSum = newNumbers.reduce((accumulator , currentValue) => {
+  return accumulator * currentValue;
+});
